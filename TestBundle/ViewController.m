@@ -18,25 +18,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapClick:)];
-    [self.view addGestureRecognizer:tap];
-    
-    
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.view addSubview:btn];
-    btn.frame = CGRectMake(100, 200, ([UIScreen mainScreen].bounds.size.width-100)/2, 50);
-    [btn setTitle:@"点我" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    btn.userInteractionEnabled = NO;
+    self.tableView.tableFooterView = [[UIView alloc]init];
 }
 
--(void)tapClick:(UITapGestureRecognizer *)tap {
-
-    TestListController *testListController = [[TestListController alloc]init];
-    testListController.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:testListController animated:YES];
-    testListController.view.backgroundColor = [UIColor whiteColor];
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
+    }
+    return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 
