@@ -1,5 +1,5 @@
 //
-//  TestListOneController.h
+//  PBTestListTwoController.h
 //  TestBundle
 //
 //  Created by DaMaiIOS on 17/11/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TestListOneController : UIViewController
+@interface PBTestListTwoController : UIViewController
 
 @end

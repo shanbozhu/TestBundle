@@ -1,5 +1,5 @@
 //
-//  TestPerson.h
+//  PBTestPerson.h
 //  TestBundle
 //
 //  Created by DaMaiIOS on 17/11/2.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TestPerson : NSObject
+@interface PBTestPerson : NSObject
 
 //@property(nonatomic, copy)NSString *name;
 //@property(nonatomic, copy)NSString *sex;

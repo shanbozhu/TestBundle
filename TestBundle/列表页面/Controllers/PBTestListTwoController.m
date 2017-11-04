@@ -1,21 +1,21 @@
 //
-//  TestListTwoController.m
+//  PBTestListTwoController.m
 //  TestBundle
 //
 //  Created by DaMaiIOS on 17/11/2.
 //  Copyright © 2017年 DaMaiIOS. All rights reserved.
 //
 
-#import "TestListTwoController.h"
+#import "PBTestListTwoController.h"
 #import <objc/runtime.h>
-#import "TestPerson.h"
+#import "PBTestPerson.h"
 
-@interface TestListTwoController ()
+@interface PBTestListTwoController ()
 
 
 @end
 
-@implementation TestListTwoController
+@implementation PBTestListTwoController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,7 +40,7 @@
 -(void)btnClick:(UIButton *)btn {
     
     
-    TestPerson *testPerson = [[TestPerson alloc]init];
+    PBTestPerson *testPerson = [[PBTestPerson alloc]init];
     
     Method m1 = class_getInstanceMethod(testPerson.class, @selector(name));
     Method m2 = class_getInstanceMethod(testPerson.class, @selector(sex));

@@ -1,23 +1,23 @@
 //
-//  ViewController.m
+//  PBTestController.m
 //  TestBundle
 //
 //  Created by DaMaiIOS on 17/7/9.
 //  Copyright © 2017年 DaMaiIOS. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "TestListController.h"
-#import "TestListOneController.h"
-#import "TestListTwoController.h"
+#import "PBTestController.h"
+#import "PBTestListController.h"
+#import "PBTestListOneController.h"
+#import "PBTestListTwoController.h"
 
-@interface ViewController ()
+@interface PBTestController ()
 
 @property(nonatomic, strong)NSArray *arr;
 
 @end
 
-@implementation ViewController
+@implementation PBTestController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -51,7 +51,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if (indexPath.row == 0) {
-        TestListController *testListController = [[TestListController alloc]init];
+        PBTestListController *testListController = [[PBTestListController alloc]init];
         testListController.hidesBottomBarWhenPushed = YES;
         
         [self.navigationController pushViewController:testListController animated:YES];
@@ -59,7 +59,7 @@
     }
     
     if (indexPath.row == 1) {
-        TestListOneController *testListOneController = [[TestListOneController alloc]init];
+        PBTestListOneController *testListOneController = [[PBTestListOneController alloc]init];
         testListOneController.hidesBottomBarWhenPushed = YES;
         
         [self.navigationController pushViewController:testListOneController animated:YES];
@@ -67,7 +67,7 @@
     }
     
     if (indexPath.row == 2) {
-        TestListTwoController *testListTwoController = [[TestListTwoController alloc]init];
+        PBTestListTwoController *testListTwoController = [[PBTestListTwoController alloc]init];
         testListTwoController.hidesBottomBarWhenPushed = YES;
         
         [self.navigationController pushViewController:testListTwoController animated:YES];

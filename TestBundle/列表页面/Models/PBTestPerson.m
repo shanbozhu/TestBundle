@@ -1,14 +1,14 @@
 //
-//  TestPerson.m
+//  PBTestPerson.m
 //  TestBundle
 //
 //  Created by DaMaiIOS on 17/11/2.
 //  Copyright © 2017年 DaMaiIOS. All rights reserved.
 //
 
-#import "TestPerson.h"
+#import "PBTestPerson.h"
 
-@interface TestPerson ()
+@interface PBTestPerson ()
 
 @property(nonatomic, copy)NSString *name;
 @property(nonatomic, copy)NSString *sex;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation TestPerson
+@implementation PBTestPerson
 
 -(NSString *)name {
     NSLog(@"i am bobo");

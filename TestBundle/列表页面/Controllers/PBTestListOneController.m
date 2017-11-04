@@ -1,16 +1,16 @@
 //
-//  TestListOneController.m
+//  PBTestListOneController.m
 //  TestBundle
 //
 //  Created by DaMaiIOS on 17/11/2.
 //  Copyright © 2017年 DaMaiIOS. All rights reserved.
 //
 
-#import "TestListOneController.h"
+#import "PBTestListOneController.h"
 #import <objc/runtime.h>
-#import "TestPerson.h"
+#import "PBTestPerson.h"
 
-@implementation TestListOneController
+@implementation PBTestListOneController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,7 +31,7 @@
 -(void)btnClick:(UIButton *)btn {
     
     
-    TestPerson *testPerson = [[TestPerson alloc]init];
+    PBTestPerson *testPerson = [[PBTestPerson alloc]init];
     
     class_addMethod([testPerson class], @selector(myfunc), (IMP)myfuncMethod, "v@:");
     if ([testPerson respondsToSelector:@selector(myfunc)]) {

@@ -1,21 +1,21 @@
 //
-//  TestListController.m
+//  PBTestListController.m
 //  TestBundle
 //
 //  Created by DaMaiIOS on 17/7/9.
 //  Copyright © 2017年 DaMaiIOS. All rights reserved.
 //
 
-#import "TestListController.h"
+#import "PBTestListController.h"
 #import <objc/runtime.h>
-#import "TestPerson.h"
+#import "PBTestPerson.h"
 
-@interface TestListController ()
+@interface PBTestListController ()
 
 
 @end
 
-@implementation TestListController
+@implementation PBTestListController
 
 
 
@@ -37,7 +37,7 @@
 
 -(void)btnClick:(UIButton *)btn {
     
-    TestPerson *testPerson = [[TestPerson alloc]init];
+    PBTestPerson *testPerson = [[PBTestPerson alloc]init];
     [testPerson setValue:@"xiaoming" forKey:@"_name"]; //kvc修改私有成员变量
     NSLog(@"name1 = %@", [testPerson valueForKey:@"_name"]);
     

@@ -1,5 +1,5 @@
 //
-//  TestListController.h
+//  PBTestController.h
 //  TestBundle
 //
 //  Created by DaMaiIOS on 17/7/9.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TestListController : UIViewController
+@interface PBTestController : UITableViewController
+
 
 @end
+
