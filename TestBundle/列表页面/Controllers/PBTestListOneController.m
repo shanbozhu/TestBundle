@@ -25,12 +25,9 @@
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     }
-    
 }
 
--(void)btnClick:(UIButton *)btn {
-    
-    
+- (void)btnClick:(UIButton *)btn {
     PBTestPerson *testPerson = [[PBTestPerson alloc]init];
     
     class_addMethod([testPerson class], @selector(myfunc), (IMP)myfuncMethod, "v@:");
@@ -39,12 +36,10 @@
     } else {
         NSLog(@"没有定义该方法");
     }
-    
 }
 
 void myfuncMethod (id self, SEL _cmd, NSString *content) {
     NSLog(@"我执行了, %@", content);
 }
-
 
 @end

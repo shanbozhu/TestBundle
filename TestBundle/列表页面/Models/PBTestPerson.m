@@ -10,20 +10,19 @@
 
 @interface PBTestPerson ()
 
-@property(nonatomic, copy)NSString *name;
-@property(nonatomic, copy)NSString *sex;
-
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *sex;
 
 @end
 
 @implementation PBTestPerson
 
--(NSString *)name {
+- (NSString *)name {
     NSLog(@"i am bobo");
     return _name;
 }
 
--(NSString *)sex {
+- (NSString *)sex {
     NSLog(@"i am man");
     return _sex;
 }

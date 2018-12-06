@@ -12,14 +12,13 @@
 
 @interface PBTestListTwoController ()
 
-
 @end
 
 @implementation PBTestListTwoController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     self.title = @"(2)动态交换两个方法的实现";
     
     {
@@ -30,16 +29,9 @@
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     }
-    
-    
-    
-    
-
 }
 
--(void)btnClick:(UIButton *)btn {
-    
-    
+- (void)btnClick:(UIButton *)btn {
     PBTestPerson *testPerson = [[PBTestPerson alloc]init];
     
     Method m1 = class_getInstanceMethod(testPerson.class, @selector(name));
@@ -47,12 +39,8 @@
     
     method_exchangeImplementations(m1, m2);
     
-    
     [testPerson performSelector:@selector(name)];
     [testPerson performSelector:@selector(sex)];
 }
-
-
-
 
 @end
