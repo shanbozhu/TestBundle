@@ -7,27 +7,12 @@
 //
 
 #import "PBHomeController.h"
-#import "PBListController.h"
 
 @interface PBHomeController ()
 
 @end
 
 @implementation PBHomeController
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    self.tabBarController.navigationItem.title = @"首页";
-    //self.navigationItem.title = @"首页";
-    
-    //NSLog(@"self.tabBarController = %@", self.tabBarController.navigationController);
-    
-    self.tabBarController.navigationController.navigationBar.barTintColor = [UIColor redColor];
-    //self.navigationController.navigationBar.barTintColor = [UIColor redColor];
-    
-    //[self.navigationController setNavigationBarHidden:YES animated:YES];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,12 +32,7 @@
 - (void)tapClick:(UITapGestureRecognizer *)tap {
     NSLog(@"我要准备跳转了");
     
-    PBListController *tvc = [[PBListController alloc]init];
-    tvc.hidesBottomBarWhenPushed = YES;
     
-    //[self.tabBarController.navigationController pushViewController:tvc animated:YES];
-    [self.navigationController pushViewController:tvc animated:YES];
-    tvc.view.backgroundColor = [UIColor whiteColor];
 }
 
 @end
