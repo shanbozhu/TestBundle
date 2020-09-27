@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9516BDC724696A390070C282 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9516BDC424696A390070C282 /* AppDelegate.m */; };
-		9516BDC824696A390070C282 /* AppDelegate+UniversalLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 9516BDC624696A390070C282 /* AppDelegate+UniversalLink.m */; };
 		9575998022FC2415009CA618 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 9575995E22FC2415009CA618 /* TFHpple.m */; };
 		9575998122FC2415009CA618 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9575996122FC2415009CA618 /* TFHppleElement.m */; };
 		9575998222FC2415009CA618 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9575996222FC2415009CA618 /* XPathQuery.m */; };
@@ -29,11 +28,6 @@
 		B0300E791F11DE5D00624D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0300E781F11DE5D00624D91 /* Assets.xcassets */; };
 		B0300E7C1F11DE5D00624D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0300E7A1F11DE5D00624D91 /* LaunchScreen.storyboard */; };
 		B0F04AB41F9E01BD00F69AC3 /* PBHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F04A9D1F9E01BD00F69AC3 /* PBHomeController.m */; };
-		B0F04AB51F9E01BD00F69AC3 /* pbhome_header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F04AA01F9E01BD00F69AC3 /* pbhome_header.jpg */; };
-		B0F04AB61F9E01BD00F69AC3 /* pbhome_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F04AA11F9E01BD00F69AC3 /* pbhome_icon@2x.png */; };
-		B0F04AB71F9E01BD00F69AC3 /* pbhome_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F04AA21F9E01BD00F69AC3 /* pbhome_icon@3x.png */; };
-		B0F04AB81F9E01BD00F69AC3 /* pbhome_sport_headerline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F04AA31F9E01BD00F69AC3 /* pbhome_sport_headerline@2x.png */; };
-		B0F04AB91F9E01BD00F69AC3 /* pbhome_sport_headerline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F04AA41F9E01BD00F69AC3 /* pbhome_sport_headerline@3x.png */; };
 		F0AFC7FF77815C888432D2DA /* libPods-TestOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F127C77A713C7E6DD53693 /* libPods-TestOC.a */; };
 /* End PBXBuildFile section */
 
@@ -42,10 +36,8 @@
 		3D8AB0C83099555FDB3679B2 /* Pods-TestBundle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBundle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestBundle/Pods-TestBundle.debug.xcconfig"; sourceTree = "<group>"; };
 		7B15444BFF46E75EEFBA7A00 /* Pods-TestBundle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBundle.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestBundle/Pods-TestBundle.release.xcconfig"; sourceTree = "<group>"; };
 		9516BDC224696A390070C282 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9516BDC324696A390070C282 /* AppDelegate+UniversalLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UniversalLink.h"; sourceTree = "<group>"; };
 		9516BDC424696A390070C282 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9516BDC524696A390070C282 /* TestOC.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOC.pch; sourceTree = "<group>"; };
-		9516BDC624696A390070C282 /* AppDelegate+UniversalLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UniversalLink.m"; sourceTree = "<group>"; };
 		957597B922F99808009CA618 /* TestBundle.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TestBundle.entitlements; sourceTree = "<group>"; };
 		9575995D22FC2415009CA618 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
 		9575995E22FC2415009CA618 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
@@ -86,11 +78,6 @@
 		B0300E7D1F11DE5D00624D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F04A9C1F9E01BD00F69AC3 /* PBHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBHomeController.h; sourceTree = "<group>"; };
 		B0F04A9D1F9E01BD00F69AC3 /* PBHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBHomeController.m; sourceTree = "<group>"; };
-		B0F04AA01F9E01BD00F69AC3 /* pbhome_header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pbhome_header.jpg; sourceTree = "<group>"; };
-		B0F04AA11F9E01BD00F69AC3 /* pbhome_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pbhome_icon@2x.png"; sourceTree = "<group>"; };
-		B0F04AA21F9E01BD00F69AC3 /* pbhome_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pbhome_icon@3x.png"; sourceTree = "<group>"; };
-		B0F04AA31F9E01BD00F69AC3 /* pbhome_sport_headerline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pbhome_sport_headerline@2x.png"; sourceTree = "<group>"; };
-		B0F04AA41F9E01BD00F69AC3 /* pbhome_sport_headerline@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pbhome_sport_headerline@3x.png"; sourceTree = "<group>"; };
 		F1F127C77A713C7E6DD53693 /* libPods-TestOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,8 +99,6 @@
 			children = (
 				9516BDC224696A390070C282 /* AppDelegate.h */,
 				9516BDC424696A390070C282 /* AppDelegate.m */,
-				9516BDC324696A390070C282 /* AppDelegate+UniversalLink.h */,
-				9516BDC624696A390070C282 /* AppDelegate+UniversalLink.m */,
 				9516BDC524696A390070C282 /* TestOC.pch */,
 			);
 			path = Common;
@@ -285,7 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				B0F04A9B1F9E01BD00F69AC3 /* Controllers */,
-				B0F04A9F1F9E01BD00F69AC3 /* Res */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -297,18 +281,6 @@
 				B0F04A9D1F9E01BD00F69AC3 /* PBHomeController.m */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		B0F04A9F1F9E01BD00F69AC3 /* Res */ = {
-			isa = PBXGroup;
-			children = (
-				B0F04AA01F9E01BD00F69AC3 /* pbhome_header.jpg */,
-				B0F04AA11F9E01BD00F69AC3 /* pbhome_icon@2x.png */,
-				B0F04AA21F9E01BD00F69AC3 /* pbhome_icon@3x.png */,
-				B0F04AA31F9E01BD00F69AC3 /* pbhome_sport_headerline@2x.png */,
-				B0F04AA41F9E01BD00F69AC3 /* pbhome_sport_headerline@3x.png */,
-			);
-			path = Res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,12 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0300E7C1F11DE5D00624D91 /* LaunchScreen.storyboard in Resources */,
-				B0F04AB81F9E01BD00F69AC3 /* pbhome_sport_headerline@2x.png in Resources */,
-				B0F04AB71F9E01BD00F69AC3 /* pbhome_icon@3x.png in Resources */,
-				B0F04AB91F9E01BD00F69AC3 /* pbhome_sport_headerline@3x.png in Resources */,
 				B0300E791F11DE5D00624D91 /* Assets.xcassets in Resources */,
-				B0F04AB61F9E01BD00F69AC3 /* pbhome_icon@2x.png in Resources */,
-				B0F04AB51F9E01BD00F69AC3 /* pbhome_header.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +382,6 @@
 				9575998222FC2415009CA618 /* XPathQuery.m in Sources */,
 				9575998622FC2415009CA618 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				9575998C22FC2415009CA618 /* YYFPSLabel.m in Sources */,
-				9516BDC824696A390070C282 /* AppDelegate+UniversalLink.m in Sources */,
 				9575998822FC2415009CA618 /* PBPhotoBrowserView.m in Sources */,
 				9575998B22FC2415009CA618 /* YYWeakProxy.m in Sources */,
 				B0F04AB41F9E01BD00F69AC3 /* PBHomeController.m in Sources */,
