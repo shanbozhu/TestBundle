@@ -23,7 +23,6 @@
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    //Controller
     PBHomeController *vc0 = [[PBHomeController alloc]init];
     vc0.view.backgroundColor = [UIColor whiteColor];
     vc0.title = @"首页";
@@ -32,9 +31,6 @@
     tab.viewControllers = @[vc0];
     
     PBNavigationController *nav = [[PBNavigationController alloc]initWithRootViewController:tab];
-    //NSLog(@"nav = %@", nav);
-        
-    //window.rootViewController
     self.window.rootViewController = nav;
     
     return YES;
